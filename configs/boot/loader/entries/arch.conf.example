@@ -1,0 +1,5 @@
+title Arch Linux
+linux /vmlinuz-linux
+initrd /intel-ucode.img
+initrd /initramfs-linux.img
+options cryptdevice=UUID=4d37d98e-91cf-488c-87ed-4f0958ebf012:lvm-crypt root=/dev/ArchGroup/root

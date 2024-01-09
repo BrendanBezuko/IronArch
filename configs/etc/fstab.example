@@ -1,0 +1,11 @@
+# /dev/mapper/ArchGroup-root
+UUID=7e530706-c6e4-4f48-b98a-b3714057fd5d	/         	ext4      	rw,relatime	0 1
+
+# /dev/mapper/ArchGroup-home
+UUID=6fab0a2f-49a5-4bc7-9b3a-e0ca6ed401b3	/home     	ext4      	rw,relatime	0 2
+
+# /dev/nvme0n1p1
+UUID=5517-CA71      	/boot     	vfat      	rw,relatime,fmask=0022,dmask=0022,codepage=437,iocharset=ascii,shortname=mixed,utf8,errors=remount-ro	0 2
+
+# /dev/mapper/ArchGroup-swap
+UUID=53b2ddce-a629-468b-8c42-78cdbf82bfc5	none      	swap      	defaults  	0 0

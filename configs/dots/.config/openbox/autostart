@@ -1,0 +1,3 @@
+#(sleep 1s && picom) &
+(sleep 1s && ~/.fehbg )&
+#(sleep 1s && conky) &

@@ -1,0 +1,21 @@
+Section "Device"
+    Identifier  "Card0"
+    Driver      "i915"  # Use "amd" for AMD cards, "intel" for Intel, etc.
+    BusID       "PCI:0:2:0"
+EndSection
+
+Section "Screen"
+    Identifier "Screen0"
+    Device     "Card0"
+    Monitor    "Monitor0"
+EndSection
+
+Section "Monitor"
+    Identifier "HDMI-2"
+    Option     "Primary" "true"
+EndSection
+
+Section "Monitor"
+    Identifier "DP-2"
+    Option     "LeftOf" "HDMI-2"
+EndSection

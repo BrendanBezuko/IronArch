@@ -1,0 +1,7 @@
+
+fix usb serial devices as showing up as ttys4 rather than dev/ttyUSB0
+
+https://bbs.archlinux.org/viewtopic.php?id=272488
+https://bbs.archlinux.org/viewtopic.php?id=269975
+https://unix.stackexchange.com/questions/670636/unable-to-use-usb-dongle-based-on-usb-serial-converter-chip/670637#670637
+sudo systemctl mask brltty.path 
