@@ -274,64 +274,26 @@
         </finalactions>
       </action>
     </keybind>
-    <!-- Key Bindings for resizing the window -->
-<keybind key="W-Left">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x>
-    <y>0</y>
-    <width>50%</width>
-    <height>100%</height>
-  </action>
-</keybind>
-<keybind key="W-Right">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>-0</x>
-    <y>0</y>
-    <width>50%</width>
-    <height>100%</height>
-    <monitor>Current</monitor>
-  </action>
-</keybind>
-<keybind key="W-Up">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x>
-    <y>0</y>
-    <width>100%</width>
-    <height>100%</height>
-    <monitor>Current</monitor>
-  </action>
-</keybind>
-<keybind key="W-Down">
-  <action name="Iconify"/>
-</keybind>
-    <!-- key bindings to move the window to different screen -->
-  <!-- Move window to the next monitor -->
-  <keybind key="W-C-Right">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x>
-    <y>0</y>
-    <width>100%</width>
-    <height>100%</height>
-    <monitor>next</monitor>
-  </action>
-  </keybind>
-
-   <keybind key="W-C-Left">
-  <action name="UnmaximizeFull"/>
-  <action name="MoveResizeTo">
-    <x>0</x>
-    <y>0</y>
-    <width>100%</width>
-    <height>100%</height>
-    <monitor>prev</monitor>
-  </action>
-  </keybind>
-
-
+    <keybind key="A-S-Tab">
+      <action name="PreviousWindow">
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
+    <keybind key="C-A-Tab">
+      <action name="NextWindow">
+        <panels>yes</panels>
+        <desktop>yes</desktop>
+        <finalactions>
+          <action name="Focus"/>
+          <action name="Raise"/>
+          <action name="Unshade"/>
+        </finalactions>
+      </action>
+    </keybind>
     <!-- Keybindings for window switching with the arrow keys -->
     <keybind key="W-S-Right">
       <action name="DirectionalCycleWindows">
@@ -354,23 +316,85 @@
       </action>
     </keybind>
     <!-- Keybindings for running applications -->
-
-    <keybind key="W-c">
+    <keybind key="F1">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>chrome</name>
+          <name>Play Music</name>
         </startupnotify>
-        <command>chromium</command>
+        <command>mpc play</command>
       </action>
     </keybind>
-    <keybind key="W-o">
+    <keybind key="F2">
       <action name="Execute">
         <startupnotify>
           <enabled>true</enabled>
-          <name>Vs Code</name>
+          <name>Pause Music</name>
         </startupnotify>
-        <command>code</command>
+        <command>mpc pause</command>
+      </action>
+    </keybind>
+    <keybind key="F3">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Prev Song</name>
+        </startupnotify>
+        <command>mpc prev</command>
+      </action>
+    </keybind>
+    <keybind key="F4">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Next Song</name>
+        </startupnotify>
+        <command>mpc next</command>
+      </action>
+    </keybind>
+    <keybind key="F5">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Shuffle Queue</name>
+        </startupnotify>
+        <command>mpc shuffle</command>
+      </action>
+    </keybind>
+    <keybind key="F6">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Rocks</name>
+        </startupnotify>
+        <command>playlist.sh rocks</command>
+      </action>
+    </keybind>
+    <keybind key="F7">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>Lilpeep</name>
+        </startupnotify>
+        <command>playlist.sh lilpeep</command>
+      </action>
+    </keybind>
+    <keybind key="F8">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>rock</name>
+        </startupnotify>
+        <command>playlist.sh rock</command>
+      </action>
+    </keybind>
+    <keybind key="F9">
+      <action name="Execute">
+        <startupnotify>
+          <enabled>true</enabled>
+          <name>cryn_loud</name>
+        </startupnotify>
+        <command>playlist.sh cryn_loud</command>
       </action>
     </keybind>
     <keybind key="W-f">

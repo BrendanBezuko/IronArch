@@ -205,3 +205,33 @@ echo -e $CYAN
 $IPT -nvL
 
 echo -e $DEFAULT
+
+#
+# color block art below
+#
+
+
+# Dimensions of the fire pattern
+width=6
+height=4
+
+# Print the top of the flames in gold
+echo -e "      \033[41m \033[0m"
+echo -e "     \033[41m \033[48;5;220m \033[41m \033[0m"
+echo -e "    \033[41m \033[48;5;220m   \033[41m \033[0m"
+echo -e "   \033[41m \033[48;5;220m  \033[0m \033[48;5;220m  \033[41m \033[0m"
+echo -e "  \033[41m \033[48;5;220m  \033[0m   \033[48;5;220m  \033[41m \033[0m"
+
+
+# Loop for each line of the wall
+for (( i = 0; i < height; i++ )); do
+    # Loop for each "pixel" in the width
+    echo -ne " "
+    for (( j = 0; j < width; j++ )); do
+	case $((RANDOM % 2)) in
+            0) echo -ne "\033[41m  " ;; # Red block
+            1) echo -ne "\033[43m  " ;; # Yellow block
+        esac
+    done
+    echo -e "\033[0m" # Reset at the end of the line
+done

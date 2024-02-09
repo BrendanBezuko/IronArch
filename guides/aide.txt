@@ -1,0 +1,9 @@
+aide data base:
+
+#create
+sudo aide --init --config /etc/aide/aide.conf
+#move the data base
+sudo mv /var/lib/aide/aide.db.new /var/lib/aide/aide.db
+sudo aide --check --config /etc/aide/aide.conf
+sudo aide --update --config /etc/aide/aide.conf
+

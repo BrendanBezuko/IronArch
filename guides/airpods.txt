@@ -1,0 +1,19 @@
+# bluetooth airpods
+sudo pacman pipewire-pulse bluez bluez-utils
+
+bluetoothctl
+[bluetooth]# power on
+[bluetooth]# scan on
+[bluetooth]# pair 00:1D:43:6D:03:26
+[bluetooth]# connect 00:1D:43:6D:03:26
+[bluetooth]# trust 00:1D:43:6D:03:26
+[bluetooth]# scan off
+[bluetooth]# exit
+
+# to make mic work
+wpctl status # to get device id
+wpctl inspect 66 
+pactl list cards # will give card number which is not object id from `wpctl status`
+wpctl set-profile 66 headset-head-unit #
+sudo systemctl restart bluetooth
+
