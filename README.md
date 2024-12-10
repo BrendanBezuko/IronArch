@@ -2,7 +2,7 @@
 
 ## Overview
 
-IronArch is a streamlined, one-click installer for Arch Linux, designed for simplicity. It offers a stable installation experience, allowing users to set up Arch Linux quickly and easily. IronArch is ideal for both beginners and experienced users who appreciate a hassle-free setup.
+IronArch amied to be a collection of scripts and installer with provisioning service script. It is currently incomplete; however, the custom_installs do work (last time I ran them one was for a vm to download music becasue I prefered to run linux in a VM on Windows over the sub system. The other was for my Ethereum mining ventures). Eventually this could be a one-click installer for Arch Linux.
 
 ## Features
 
