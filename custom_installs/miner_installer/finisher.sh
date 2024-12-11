@@ -9,6 +9,11 @@ PASS=$1
 NET_DEV="wlp4s0"
 STATUS_LOG="/root/install.log"
 
+WIFIPASS="example"
+WIFINAME="example"
+
+ETHADDR="abc"
+
 # constants 
 IPT=iptables
 IPT6=ip6tables
@@ -63,7 +68,7 @@ systemctl restart iptables
 $IPT -nvL
 
 #wifi
-wpa_passphrase Trump BrightPelican569 >> /etc/wpa_supplicant/wpa_supplicant-${NET_DEV}
+wpa_passphrase ${WIFINAME} ${WIFIPASS} >> /etc/wpa_supplicant/wpa_supplicant-${NET_DEV}
 systemctl start wpa_supplicant@${NET_DEV}
 systemctl enable wpa_supplicant@${NET_DEV}
 
@@ -116,7 +121,7 @@ cat <<- EOF > /usr/local/bin/miner.sh
 #!/bin/sh
 /usr/local/bin/PhoenixMiner \
 	-pool eth-eu.sparkpool.com:3333 \
-	-wal 0x585ddeb94c1b9968a9f078ae06a6925558557697 \
+	-wal ${ETHADDR} \
 	-worker Phoenix \
 	-epsw x \
 	-mode 1 \

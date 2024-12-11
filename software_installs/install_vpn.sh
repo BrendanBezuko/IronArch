@@ -1,5 +1,5 @@
 #!/bin/sh
-USERNAME='bezukobb@gmail.com'
+USERNAME=''
 PASS=''
 TESTCONF='uk2040.nordvpn.com.tcp.ovpn'
 

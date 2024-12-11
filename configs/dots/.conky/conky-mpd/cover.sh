@@ -11,7 +11,7 @@
 # Don't use ~, as conky will treat it as a regular directory name
 CACHE="$HOME/.covers"
 # API Key for Last.fm
-APIKEY="41285c1903b3b9c33a8b59ff58c7b90a"
+APIKEY=""
 # Log file, only for debugging purposes
 LOG=/tmp/conky-mpd.log
 

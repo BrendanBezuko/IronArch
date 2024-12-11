@@ -4,9 +4,9 @@ sudo pacman pipewire-pulse bluez bluez-utils
 bluetoothctl
 [bluetooth]# power on
 [bluetooth]# scan on
-[bluetooth]# pair 00:1D:43:6D:03:26
-[bluetooth]# connect 00:1D:43:6D:03:26
-[bluetooth]# trust 00:1D:43:6D:03:26
+[bluetooth]# pair <mac>
+[bluetooth]# connect <mac>
+[bluetooth]# trust <mac>
 [bluetooth]# scan off
 [bluetooth]# exit
 
