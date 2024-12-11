@@ -34,6 +34,7 @@ Just a few notes about how to do somethings on Linux.
 
 ## Other Directories of this Repo
 
+- **Gudies:** Just a few notes/how-tos for Linux or Arch Linux.
 - **Pacman_hooks:** Just some pacman configurations.
 - **Services:** All the services for main installer and other services configuartions
 - **Configs:** All the configurations found in /etc /boot
